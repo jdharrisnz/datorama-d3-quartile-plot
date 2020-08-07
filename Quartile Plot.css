@@ -1,0 +1,47 @@
+body {
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+line {
+  vector-effect: non-scaling-stroke;
+}
+
+.boxLine {
+  stroke-width: 3px;
+  stroke: rgb(78, 121, 167);
+}
+
+.contextLine {
+  stroke-width: 1px;
+  stroke: black;
+  opacity: 0.2;
+}
+
+.plotText {
+  position: absolute;
+  white-space: nowrap;
+  color: rgb(128, 128, 128);
+  transform: rotate(90deg);
+  transform-origin: center left;
+}
+
+.plotLabel {
+  transform: rotate(90deg) translate(-100%, 0) translate(-1.5em, 0);
+}
+
+#tooltip {
+  z-index: 1;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  opacity: 0.9;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  line-height: normal;
+}
+
+.tooltipLabel {
+  font-weight: 600;
+  color: rgb(128, 128, 128);
+}
